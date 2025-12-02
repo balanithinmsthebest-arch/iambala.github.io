@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bala is just 'nother guy trying to learn what it feels like to have the 
+      freedom to put whatever he wants onto the internet!!"
+    />
+    <title>Introducing Bala!</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="96x96" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Header"></div>
+    <h1>Introducing myself!</h1>
+
+    <div class="main">
+      <img
+        src="images/bala1.jpeg"
+        alt="Me chilling with the Math T-shirt that has a LoTR reference!"
+        class="top"
+      />
+      <p>
+        I made this website as a project for the W&B club of IIT Madras, of
+        which I am now a Deputy Coordinator. It also makes a lot of sense to
+        have self-intro website, doesn't it? Well, lets see if I can bring this
+        one to life with whatever I have learnt thus far.<br />
+        I am Bala Nithin M S, an undergraduate student in Aerospace Engineering
+        at the Indian Institute of Technology, Madras, with a growing interest
+        in fluid mechanics and research at the intersection of Physics and
+        Aerospace. I enjoy combining my curiosity for science and technology
+        with hands-on work in coding, 3D design, and student clubs on campus.
+      </p>
+      <br />
+      <img
+        src="images/bala3.png"
+        alt="just fashionable old me!"
+        class="bottom"
+      />
+      <div class="topic-wise">
+        <div class="subtopic">
+          <h2>Background and education</h2>
+        </div>
+        <div class="content">
+          <img
+            style="float: right; width: 200px; margin-left: 16px"
+            src="images/edu.jpg"
+            alt="pic of education"
+          />
+          <p>
+            I was born and brought up in Coimbatore, Tamil Nadu, and I currently
+            live in Chennai with my parents. I completed my schooling at The
+            Camford International School (TCIS), where I developed a strong
+            inclination towards the sciences and participated actively in
+            academic pursuits.
+          </p>
+        </div>
+      </div>
+      <div class="topic-wise">
+        <div class="subtopic">
+          <h2>Academic interests</h2>
+        </div>
+        <div class="content">
+          <img
+            style="float: left; width: 200px; margin-right: 16px"
+            src="images/acad.webp"
+            alt="pic of acads"
+          />
+          <p>
+            Within aerospace, I have recently become particularly interested in
+            fluid mechanics and aerodynamics, and I am keen on exploring these
+            areas in greater depth through coursework and future research
+            projects. During school, I secured a good state-level rank in the
+            Biology Olympiad, which strengthened my interest in core science
+            subjects and analytical problem-solving.
+          </p>
+        </div>
+      </div>
+      <div class="topic-wise">
+        <div class="subtopic">
+          <h2>Technical Skills</h2>
+        </div>
+        <div class="content">
+          <img
+            style="float: right; width: 200px; margin-left: 16px"
+            src="images/tech.png"
+            alt="pic of technologia"
+          />
+          <p>
+            I have a reasonable command of C and Python and have recently
+            started learning C++, along with experience in HTML and CSS and an
+            ongoing effort to improve my JavaScript skills. I also work with CAD
+            and 3D design tools such as Fusion 360 and Tinkercad, and I built a
+            simple drone prototype in middle school, which first sparked my
+            interest in engineering and making.
+          </p>
+        </div>
+      </div>
+      <div class="topic-wise">
+        <div class="subtopic">
+          <h2>Clubs and campus involvement</h2>
+        </div>
+        <div class="content">
+          <img
+            style="float: left; width: 190px; margin-right: 16px"
+            src="images/club.jpg"
+            alt="pic of club-work"
+          />
+          <p>
+            I am an active member of several student communities at IIT Madras,
+            including the WebOps and Blockchain Club at CFI, where students work
+            on web development and blockchain-based software with real-world
+            impact. I am also part of Horizon, the Physics and Astronomy
+            society, the Mathematics Club, and the 3D Printing Club, all of
+            which allow me to explore physics, mathematics, and prototyping in a
+            collaborative environment.
+          </p>
+        </div>
+      </div>
+      <div class="topic-wise">
+        <div class="subtopic">
+          <h2>Interests and hobbies</h2>
+        </div>
+        <div class="content">
+          <img
+            style="float: right; width: 190px; margin-left: 16px"
+            src="images/interest.png"
+            alt="pic of interest"
+          />
+          <p>
+            Outside academics and technical work, I am an avid reader,
+            especially of historical fiction and fantasy, and I am currently
+            immersed in Sarah J. Maas' Throne of Glass series. I also enjoy
+            playing badminton and swimming, which help me maintain a balanced
+            routine and unwind after intense academic and club activities.
+          </p>
+        </div>
+      </div>
+      <div class="topic-wise">
+        <div class="subtopic">
+          <h2>Contact Me!</h2>
+        </div>
+        <div class="content">
+          <img
+            style="float: left; width: 190px; margin-right: 16px"
+            src="images/contact.png"
+            alt="contact me png"
+          />
+          <p>
+            Email:
+            <a href="mailto: ae25b009@smail.iitm.ac.in"
+              >ae25b009@smail.iitm.ac.in</a
+            >
+            <br />
+            Phone: ask me yourself <br />
+            Instagram:
+            <a
+              href="https://www.instagram.com/balanithin.m.s?igsh=MWJlZWJweTcwZWk0Zg=="
+              >@BALANITHIN.M.S</a
+            >
+          </p>
+        </div>
+      </div>
+      <div id="weather"></div>
+      <div id="map-contain">
+        <h2>CHENNAI!</h2>
+        <div id="map"></div>
+      </div>
+    </div>
+    <script>
+      let weatherDiv = document.getElementById("weather");
+      const apiKey = "0fc0488a3404449184f204619250212";
+      const city = "Chennai";
+      const url = `https://api.weatherapi.com/v1/forecast.json?key=bc37b7b1585849a0849210718250212&q=Chennai&days=1&aqi=no&alerts=no
+        `;
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          const cityName = data.location.name;
+          const condition = data.current.condition.text;
+          const tempc = data.current.temp_c;
+          const tempf = data.current.temp_f;
+          const icon = data.current.condition.icon;
+
+          weatherDiv.innerHTML = `
+                <h2>Weather in ${city}</h2>
+                <img src="https:${icon}" alt="${condition}" id="weatherPic">
+                <p id="temp">${tempc}°C || ${tempf}°F</p><br>
+                <p id="condition">${condition}</p>
+            `;
+        })
+        .catch((error) => {
+          document.getElementById("weather").innerText =
+            "Failed to load weather.";
+          console.error(error);
+        });
+    </script>
+    <script>
+      const cityLat = 13.0827;
+      const cityLon = 80.2707;
+      const map = L.map("map").setView([cityLat, cityLon], 12);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      L.marker([cityLat, cityLon]).addTo(map).bindPopup("Chennai").openPopup();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+body {
+  background-color: rgb(244, 217, 238);
+}
+.Header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  z-index: 50;
+  background-color: rgb(244, 217, 238);
+  opacity: 0.75;
+}
+.main {
+  margin-top: 100px;
+  padding-top: 50px;
+  z-index: 2;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+}
+h1 {
+  position: fixed;
+  top: 10px;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  border: 2px solid black;
+  background-color: rgb(157, 4, 239);
+  color: rgb(249, 228, 201);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  opacity: 0.95;
+}
+h2 {
+  text-align: left;
+  font-size: 34px;
+  background-color: rgb(157, 4, 239);
+  color: rgb(249, 228, 201);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+}
+img.top {
+  width: 100px;
+  height: auto;
+  float: left;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+img.bottom {
+  right: 10%;
+  position: fixed;
+  top: 15%;
+  width: 38%;
+  opacity: 0.3;
+  z-index: 1;
+}
+p {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+.topic-wise {
+  display: flex;
+  width: 50vb;
+  padding: 2vb;
+  margin: 2vb;
+  flex-direction: column;
+  background-color: rgb(221, 174, 247);
+  opacity: 0.95;
+      }
+.topic-wise .subtopic {
+  display: block;
+}
+.topic-wise .content {
+  display: none;
+  background-color: rgb(206, 129, 248);
+  padding: 0.5%;
+}
+.topic-wise:hover {
+  width: auto;
+  z-index: 10;
+  margin: 3vb;
+  box-shadow: 0 4px 8px rgb(86, 67, 96);
+}
+.topic-wise:hover .content {
+  display: block;
+}
+.topic-wise:hover .subtopic {
+  display: none;
+}
+
+#weather {
+  width: 90%;
+  padding: 2vb;
+  margin: 2vb;
+  background-color: rgb(221, 174, 247);
+  position: relative;
+  overflow: hidden;
+}
+#weatherPic {
+  width: 12.5%;
+  background-color: rgb(86, 67, 96);
+  float: left;
+  margin: 2.5%;
+}
+#temp {
+  font: 1em sans-serif;
+  font-size: 30px;
+  margin-bottom: 2.5px;
+  padding: 5px;
+  display: inline;
+  background-color: rgb(156, 123, 174);
+  border-radius: 15px;
+}
+#condition {
+ font-style: italic;
+}
+#map-contain {
+  background-color: rgb(221, 174, 247);
+  margin: 2vb;
+  padding: 1vb;
+}
+#map {
+  z-index: 10;
+  display: flex;
+  height: 400px;
+  width: 96%;
+  margin: 2vb;
+}
