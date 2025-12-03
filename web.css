@@ -59,12 +59,6 @@ p {
   font-family: sans-serif;
   font-size: 17px;
 }
-.holder {
-  opacity: 0;
-  width: 100vb;
-  margin: 0;
-  padding: 0;
-}
 .topic-wise {
   display: flex;
   width: 50vb;
@@ -82,16 +76,16 @@ p {
   background-color: rgb(206, 129, 248);
   padding: 0.5%;
 }
-.holder:hover .topic-wise{
+.topic-wise:hover {
   width: auto;
   z-index: 10;
   margin: 3vb;
   box-shadow: 0 4px 8px rgb(86, 67, 96);
 }
-.holder:hover .content {
+.topic-wise:hover .content {
   display: block;
 }
-.holder:hover .subtopic {
+.topic-wise:hover .subtopic {
   display: none;
 }
 
@@ -133,5 +127,6 @@ p {
   width: 96%;
   margin: 2vb;
 }
+
 
 
