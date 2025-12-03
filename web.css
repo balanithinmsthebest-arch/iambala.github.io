@@ -60,10 +60,10 @@ p {
   font-size: 17px;
 }
 .holder {
-  opacity=0;
-  width=100vb;
-  margin=0;
-  padding=0;
+  opacity: 0;
+  width: 100vb;
+  margin: 0;
+  padding: 0;
 }
 .topic-wise {
   display: flex;
@@ -82,16 +82,16 @@ p {
   background-color: rgb(206, 129, 248);
   padding: 0.5%;
 }
-.topic-wise:hover {
+.holder:hover .topic-wise{
   width: auto;
   z-index: 10;
   margin: 3vb;
   box-shadow: 0 4px 8px rgb(86, 67, 96);
 }
-.topic-wise:hover .content {
+.holder:hover .content {
   display: block;
 }
-.topic-wise:hover .subtopic {
+.holder:hover .subtopic {
   display: none;
 }
 
@@ -133,4 +133,5 @@ p {
   width: 96%;
   margin: 2vb;
 }
+
 
