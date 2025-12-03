@@ -59,6 +59,12 @@ p {
   font-family: sans-serif;
   font-size: 17px;
 }
+.holder {
+  opacity=0;
+  width=100vb;
+  margin=0;
+  padding=0;
+}
 .topic-wise {
   display: flex;
   width: 50vb;
@@ -127,3 +133,4 @@ p {
   width: 96%;
   margin: 2vb;
 }
+
